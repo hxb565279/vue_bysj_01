@@ -16,11 +16,11 @@
         width="180">
       </el-table-column>
       <el-table-column
-        prop="nowConfirm"
-        label="现存确诊">
+        prop="confirm"
+        label="新增确诊">
       </el-table-column>
       <el-table-column
-        prop="confirm"
+        prop="nowConfirm"
         label="累计确诊">
       </el-table-column>
       <el-table-column
@@ -58,9 +58,9 @@ export default {
   data() {
     return {
       tableData: [{
-        id: '2016-05-02',
-        area: '王小虎',
-        nowConfirm: '上海市普陀区金沙江路 1518 弄',
+        id: '',
+        area: '',
+        nowConfirm: '',
         confirm: "",
         heal: "",
         dead: ""
@@ -71,7 +71,7 @@ export default {
 
   created() {
     const _this = this;
-    console.log(1212)
+
     axios.get('http://localhost:85/data/findall').then(function (resp) {
       console.log(resp)
       _this.tableData = resp.data

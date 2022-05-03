@@ -1,6 +1,9 @@
 <template>
   <div>
     <p>国内疫情如下</p>
+    <p>
+      <button type="button" onclick="">爬取</button>
+    </p>
     <el-table :data="tableData"
               style="width: 100%"
               :row-class-name="tableRowClassName">
@@ -56,9 +59,9 @@ export default {
   data() {
     return {
       tableData: [{
-        id: '2016-05-02',
-        area: '王小虎',
-        nowConfirm: '上海市普陀区金沙江路 1518 弄',
+        id: '',
+        area: '',
+        nowConfirm: '',
         confirm: "",
         heal: "",
         dead: ""

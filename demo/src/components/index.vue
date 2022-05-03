@@ -11,6 +11,7 @@
       <el-menu-item index="3">18027240065</el-menu-item>
       <el-menu-item index="4" @click="See('http://localhost:84/ToGNYQ')">国内疫情图</el-menu-item>
       <el-menu-item index="5" @click="see2('http://localhost:84/ToGWYQ')">国外疫情图</el-menu-item>
+      <el-menu-item index="6" @click="see3('http://localhost:84/toMain')">简化版</el-menu-item>
 <!--      <el-menu-item index="6" class="i1"><a>登录</a></el-menu-item>-->
 <!--      <el-menu-item index="7" class="i2"><a>注册</a></el-menu-item>-->
     </el-menu>
@@ -72,6 +73,9 @@ export default {
       window.location.href = e
     },
     see2(e) {
+      window.location.href = e
+    },
+    see3(e) {
       window.location.href = e
     }
   },
